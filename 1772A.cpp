@@ -1,31 +1,27 @@
 #include<bits/stdc++.h>
-
 using namespace std;
-
+ 
 void solve()
 {
-    int sum=0;
-    string a,b;
-    string s;
-    cin>>s;
-    for(char i='0';i<='9';i++)
-    {
-        if(i==s[0])
-        {
-            a=i;
-        }
-        if(s[2]==i)
-        {
-            b=i;
-        }
-    }
-    sum=stoi(a)+stoi(b);
-    cout<<sum<<endl;
+    string s,s1,s2;
+    int n;
+    cin>>n>>s;
+    s1="Timru";
+    sort(s.begin(),s.end());
+    
+   
+    
+    
+   if(s==s1)
+   {
+       cout<<"YES"<<endl;
+   }
+   else cout<<"NO"<<endl; 
 }
-
+ 
 int main()
 {
     int t;
     cin>>t;
-    while(t--) solve();
+    while(t--)solve();
 }
